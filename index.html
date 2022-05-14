@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220514202038">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header" data-lp>
+			<div class="header__container">
+				<div class="header__col-l col-l">
+					<div class="col-l__logo"></div>
+					<div class="col-l__title">
+						<p class="col-l__title-t">Главная</p>
+					</div>
+					<div class="col-l__menu menu">
+						<button type="button" class="menu__icon icon-menu">
+							<div class="_icon-ellipsis icon-menu__elips"></div>
+						</button>
+						<nav class="menu__body push-menu-block ">
+							<ul class="menu__list push-menu-body">
+								<li class="menu__item">
+									<p class="menu__title">Глава 1</p>
+								</li>
+								<li class="menu__item"><a href="" class="menu__link push-menu-link">Пункт</a></li>
+								<li class="menu__item"><a href="" class="menu__link push-menu-link">Пункт</a></li>
+								<li class="menu__item"><a href="" class="menu__link push-menu-link">Пункт</a></li>
+								<li class="menu__item">
+									<p class="menu__title">Глава 2</p>
+								</li>
+								<li class="menu__item"><a href="" class="menu__link push-menu-link">Пункт</a></li>
+								<li class="menu__item"><a href="" class="menu__link push-menu-link">Пункт</a></li>
+								<li class="menu__item"><a href="" class="menu__link push-menu-link">Пункт</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="header__col-c col-c">
+					<div class="col-c__input-wrapper" id="s-wrapper">
+						<button class="col-c__close close-btn" id="s-close">
+							<div class="_icon-close"></div>
+						</button>
+						<div class="col-c__input" id="s-input">
+							<input placeholder="Найти" type="text" class="input-main">
+							<button type="submit" class="col-c__search">
+								<div class="col-c__s-icon">
+									<div class="_icon-search"></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<button class="col-c__search-mobile" id="search">
+						<div class="_icon-search"></div>
+					</button>
+					<div class="col-c__s-back"></div>
+				</div>
+				<div class="header__col-r col-r">
+					<div class="col-r__autor">
+						<a href="" data-popup="#login" class="col-r__login l-g-btn">
+							<div>Войти</div>
+						</a>
+						<a href="" data-popup="#sign-up" class="col-r__sign-up m-btn">
+							<div>Регистрация</div>
+						</a>
+					</div>
+					<div class="col-r__icon-button icon-button">
+						<button class="icon-button__user" id="profile-menu">
+							<div class="_icon-user user-i"></div>
+							<!-- <div class="icon-button__pic-ibg user-pic">
+						<img
+							src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/acc2bb28-ba82-4e0e-b366-7dea1071ee5c/de4m2q9-f2d337f6-663a-48de-9de1-4f6196e53629.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2FjYzJiYjI4LWJhODItNGUwZS1iMzY2LTdkZWExMDcxZWU1Y1wvZGU0bTJxOS1mMmQzMzdmNi02NjNhLTQ4ZGUtOWRlMS00ZjYxOTZlNTM2MjkucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Kw-SAngX4WKDXyjKqBPnCQbctOGizrFQqUOI1rsOpFQ"
+							alt="">
+					</div> -->
+						</button>
+						<div class="icon-button__layaout push-menu-block" id="profile-menu-lay">
+							<div class="icon-button__body push-menu-body">
+								<div class="icon-button__header">
+									<a href="" class="icon-button__user-logo">
+										<div class="_icon-user"></div>
+										<!-- <div class="icon-button__user-logo-ibg user-pic">
+									<img
+										src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/acc2bb28-ba82-4e0e-b366-7dea1071ee5c/de4m2q9-f2d337f6-663a-48de-9de1-4f6196e53629.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2FjYzJiYjI4LWJhODItNGUwZS1iMzY2LTdkZWExMDcxZWU1Y1wvZGU0bTJxOS1mMmQzMzdmNi02NjNhLTQ4ZGUtOWRlMS00ZjYxOTZlNTM2MjkucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Kw-SAngX4WKDXyjKqBPnCQbctOGizrFQqUOI1rsOpFQ"
+										alt="">
+								</div> -->
+									</a>
+									<div class="icon-button__set">
+										<div class="icon-button__name">Admin</div>
+										<a href="" class="icon-button__manage">Управление аккаунтом</a>
+									</div>
+								</div>
+								<ul class="icon-button__list">
+									<li id="link-langs" class="icon-button__item">
+										<button class="icon-button__link icon-button__btn push-menu-link">
+											<div class="_icon-lang icon-button__lang"></div><span>Язык</span>
+											<div class="_icon-arrow icon-button__forward-icon"></div>
+										</button>
+									</li>
+									<li class="icon-button__item">
+										<a href="" data-popup="#login" class="icon-button__link push-menu-link">
+											<div class="_icon-login icon-button__login""></div><span>Войти</span>
+								</a>
+							</li>
+							<li class=" icon-button__item sign-up-for-m">
+												<a href="" data-popup="#sign-up" class="icon-button__link push-menu-link">
+													<div class="_icon-login icon-button__login icon-button__sign-up""></div><span>Регистрация</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class=" icon-button__langs push-menu-block langs" id="langs">
+														<button class="langs__back" id="lang-back">
+															<div class="_icon-arrow langs__arrow-back"></div><span>Назад</span>
+														</button>
+														<div class="langs__body push-menu-body">
+															<ul class="langs__list">
+																<li class="langs__item">
+																	<a href="" class="langs__link push-menu-link">
+																		<span>English</span>
+																	</a>
+																</li>
+																<li class="langs__item">
+																	<a href="" class="langs__link push-menu-link">
+																		<span>Русский</span>
+																	</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+											</div>
+							</div>
+						</div>
+		</header>
+		<main class="page">
+			<div class="page__container">
+				<div class="page__body body-page">
+					<div class="body-page__sidebar sidebar">
+						<div class="sidebar-c bdr-block">
+							<div class="sidebar__header header-sidebar">
+								<div class="header-sidebar__logo">
+									<!-- <div class="header-sidebar__logo-ibg user-pic">
+										<img
+											src="https://www.mantruckandbus.com/fileadmin/_processed_/2/b/csm_19-09_startseite_interviewkachel_324_224_3_726a3e77d5.jpg"
+											alt="">
+									</div> -->
+									<div class="header-sidebar__unreg _icon-user"></div>
+								</div>
+								<div class="header-sidebar__body sidebar-body">
+									<div class="sidebar-body__name">Admin</div>
+									<div class="sidebar-body__dark">
+										<button class="sidebar-body__dark-btn l-g-btn" id="theme">
+											<div class="_icon-dark-mode"></div>
+											<span>Ночной режим</span>
+										</button>
+									</div>
+								</div>
+							</div>
+							<nav class="sidebar__nav">
+								<ul class="sidebar__list">
+									<li class="sidebar__item">
+										<a href="" class="sidebar__link push-menu-link">
+											<div class="_icon-news sidebar__menu sidebar__link-icon"></div>
+											<span>Новости</span>
+										</a>
+									</li>
+									<li class="sidebar__item">
+										<a href="" class="sidebar__link push-menu-link">
+											<div class="_icon-music sidebar__music sidebar__link-icon"></div>
+											<span>Музыка</span>
+										</a>
+									</li>
+									<li class="sidebar__item">
+										<a href="" class="sidebar__link push-menu-link">
+											<div class="_icon-gallery sidebar__gallery sidebar__link-icon"></div>
+											<span>Галерея</span>
+										</a>
+									</li>
+									<li class="sidebar__item">
+										<a href="" class="sidebar__link push-menu-link">
+											<div class="_icon-portfolio sidebar__portfolio sidebar__link-icon"></div>
+											<span>Работы</span>
+										</a>
+									</li>
+									<li class="sidebar__item">
+										<a href="" class="sidebar__link push-menu-link">
+											<div class="_icon-people sidebar__people sidebar__link-icon"></div>
+											<span>Люди</span>
+										</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<div class="body-page__total total">
+						<div class="total__main-bar main-bar bdr-block">
+							Новостная лента [тест]
+						</div>
+						<div class="total__page-com page-com">
+							<div class="page-com__content-com content-com">
+								<ul class="content-com__list">
+									<li class="content-com__item item-article bdr-block">
+										<div class="item-article__header">
+											<h3 class="item-article__title">Новости</h3>
+										</div>
+										<div class="item-article__imgs">
+											<div class="item-img-ibg item-article__img">
+												<img
+													src="https://www.nestle.com/sites/default/files/styles/da_vinci_header_hero_desktop/public/2022-02/sustainability-nature-forest-river-article-header-fw.jpg?h=a612ed85&itok=1mqqgg1L"
+													alt="">
+											</div>
+										</div>
+										<div class="article-title-item__text">
+											Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum earum incidunt officia
+											fugiat eum ducimus illo impedit necessitatibus possimus mollitia consectetur iure
+											consequatur atque, eligendi veniam in officiis nobis ullam? Dolores modi nemo pariatur
+											ducimus voluptatum laudantium quidem possimus odit sint commodi esse facere, distinctio
+											perspiciatis, necessitatibus eius aspernatur labore minima nostrum officia cum! Nihil,
+											dolorem voluptas delectus veniam adipisci eaque facere earum maxime sint quod laborum
+											iusto. Placeat iste, amet soluta, sequi similique ab nesciunt, voluptatem velit hic
+											tenetur assumenda repudiandae optio accusamus facilis rerum. Cumque iure soluta
+											facilis? Modi necessitatibus autem sed dolores? Quae similique hic mollitia numquam?
+										</div>
+									</li>
+									<li class="content-com__item item-article bdr-block">
+										<div class="item-article__header">
+											<div class="item-article__left">
+												<div class="item-article__logo item-article__logo-ibg">
+
+												</div>
+												<div class="item-article__name">Администрация</div>
+											</div>
+											<div class="item-article__right">
+												<button class="item-article__btn l-g-btn">
+													<div class="_icon-ellipsis"></div>
+												</button>
+												<div class="item-article__menu menu-hover">
+													<ul class="menu-hover__body">
+														<li class="menu__item"><a href="" class="menu__link push-menu-link">Пункт</a>
+														</li>
+														<li class="menu__item"><a href="" class="menu__link push-menu-link">Пункт</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="article-title-item__text">
+											Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum earum incidunt officia
+											fugiat eum ducimus illo impedit necessitatibus possimus mollitia consectetur iure
+											consequatur atque, eligendi veniam in officiis nobis ullam? Dolores modi nemo pariatur
+											ducimus voluptatum laudantium quidem possimus odit sint commodi esse facere, distinctio
+											perspiciatis, necessitatibus eius aspernatur labore minima nostrum officia cum! Nihil,
+											dolorem voluptas delectus veniam adipisci eaque facere earum maxime sint quod laborum
+											iusto. Placeat iste, amet soluta, sequi similique ab nesciunt, voluptatem velit hic
+											tenetur assumenda repudiandae optio accusamus facilis rerum. Cumque iure soluta
+											facilis? Modi necessitatibus autem sed dolores? Quae similique hic mollitia numquam?
+										</div>
+									</li>
+									<li class="content-com__item bdr-block">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, earum fugit fuga debitis
+										nihil voluptate, minima aliquam maiores unde qui tempore quaerat repudiandae, quidem aut
+										maxime nulla itaque! Labore, debitis.
+										Sequi pariatur numquam nisi iusto ipsa eum quasi totam? Amet totam soluta eum dolorem
+										minus vitae ratione optio, quam eaque est repudiandae modi reprehenderit eveniet
+										praesentium non assumenda, sit aliquam.
+										Fugiat, odit facere ullam porro nulla officia repellendus necessitatibus quasi magnam quos
+										veniam atque, aliquid amet consequuntur laudantium quisquam debitis ipsa voluptates
+										praesentium tempore itaque. Aut rem voluptatibus facere illum.
+										Officiis odio sunt consectetur maxime optio asperiores explicabo odit neque consequatur
+										corporis blanditiis, minima soluta maiores ipsa tempora libero atque, facere aut
+										praesentium aliquam eius ut vitae expedita. Sit, accusantium.
+										Natus deleniti, excepturi minima velit maiores eveniet distinctio molestias odit
+										perspiciatis tempora placeat voluptatem. Enim, cum eum consequatur rem repellat sit
+										officia omnis veniam quisquam voluptate perferendis tenetur excepturi ex!
+										Libero, nesciunt. Ipsa iste quam veritatis ullam dolorem tempora officia modi, alias neque
+										aliquid quae unde exercitationem vitae at, a vel quod ea, rem inventore. Atque quo
+										incidunt culpa placeat.
+										Hic tempore harum non quasi, accusantium delectus itaque incidunt iste, doloremque dolores
+										nobis ipsum quo cupiditate aspernatur reiciendis repellendus veniam expedita dignissimos
+										architecto earum, fugit quam assumenda! Expedita, reprehenderit quam.
+										Eum officiis, at illo, minus voluptas commodi optio illum natus rerum eos excepturi? Non
+										nam explicabo inventore dignissimos perferendis eveniet voluptatem, sint sunt. Hic
+										laboriosam dolores fugiat molestias expedita molestiae!
+										Provident blanditiis temporibus ratione illum doloremque aspernatur ipsum autem id nisi,
+										voluptates placeat odit. Quas, cum? Reprehenderit labore repellendus quisquam corporis at
+										esse aspernatur libero, iusto quo ab voluptate possimus!
+										Dicta eum voluptatum inventore distinctio deserunt cumque quasi laborum voluptatem! Nihil
+										quasi corrupti delectus explicabo numquam possimus magni eligendi! Cupiditate consequatur
+										adipisci minima nihil odio neque, animi fugiat? Vel, veniam.
+									</li>
+								</ul>
+							</div>
+							<div class="page-com__left-bar left-bar">
+								<div class="left-bar__body bdr-block">
+									В разработке...
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<div id="login" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content bdr-block">
+				<button data-close type="button" class="popup__close">
+					<div class="_icon-close"></div>
+				</button>
+				<div class="popup__body body-popup">
+					<div class="body-popup__header">
+						<div class="body-popup__logo">
+						</div>
+						<div class="body-popup__title">Войти</div>
+					</div>
+					<div class="body-popup__autor">
+						<a href="" data-popup="#login" class="body-popup__login line-m">Войти</a>
+						<a href="" data-popup="#sign-up" class="body-popup__sign-up">Зарегистрироваться</a>
+					</div>
+					<form class="body-popup__form-l form-l">
+						<label class="form-l__label">
+							<span class="form-l__title t-b-m">Имя пользователя</span>
+							<input type="text" class="form-l__input input-main">
+						</label>
+						<label class="form-l__label">
+							<span class="form-l__title t-b-m">Пароль</span>
+							<input type="password" class="form-l__input input-main">
+						</label>
+						<div class="form-l__footer">
+							<button class="form-l__btn m-btn">Войти</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="sign-up" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content bdr-block">
+				<button data-close type="button" class="popup__close">
+					<div class="_icon-close"></div>
+				</button>
+				<div class="popup__body body-popup">
+					<div class="body-popup__header">
+						<div class="body-popup__logo">
+						</div>
+						<div class="body-popup__title">Регистрация</div>
+					</div>
+					<div class="body-popup__autor">
+						<a href="" data-popup="#login" class="body-popup__login">Войти</a>
+						<a href="" data-popup="#sign-up" class="body-popup__sign-up line-m">Зарегистрироваться</a>
+					</div>
+					<form class="body-popup__form-l form-l">
+						<label class="form-l__label">
+							<span class="form-l__title t-b-m">Имя пользователя</span>
+							<input type="text" class="form-l__input input-main">
+						</label>
+						<label class="form-l__label">
+							<span class="form-l__title t-b-m">Пароль</span>
+							<input type="password" class="form-l__input input-main">
+						</label>
+						<label class="form-l__label">
+							<span class="form-l__title t-b-m">Повторить пароль</span>
+							<input type="password" class="form-l__input input-main">
+						</label>
+						<label class="form-l__label">
+							<span class="form-l__title t-b-m">День рождения</span>
+							<div class="form-l__label-db">
+								<input type="text" placeholder="День" class="form-l__bd input-main">
+								<input type="text" placeholder="Месяц" class="form-l__bd input-main">
+								<input type="text" placeholder="Год" class="form-l__bd input-main">
+							</div>
+						</label>
+						<div class="form-l__footer">
+							<button class="form-l__btn m-btn">Зарегестрироваться</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20220514202038"></script>
+</body>
+
+</html>
