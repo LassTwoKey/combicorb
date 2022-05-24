@@ -96,8 +96,8 @@
                 element: false
             };
             this.lastClosed = {
-                selector: true,
-                element: true
+                selector: false,
+                element: false
             };
             this._dataValue = false;
             this.hash = false;
@@ -121,7 +121,7 @@
                     ...options?.on
                 }
             };
-            this.bodyLock = false;
+            this.bodyLock = true;
             this.options.init ? this.initPopups() : null;
         }
         initPopups() {
@@ -338,18 +338,5 @@
             } else profileMenuLayout.classList.remove("open");
         }));
     }
-    const search = document.querySelector("#search");
-    const sWrapper = document.querySelector("#s-wrapper");
-    const sInput = document.querySelector("#s-input");
-    const Sclose = document.querySelector("#s-close");
-    search.addEventListener("click", (() => {
-        sWrapper.classList.add("open");
-        sInput.classList.add("open");
-    }));
-    Sclose.addEventListener("click", (() => {
-        sWrapper.classList.remove("open");
-        sInput.classList.remove("open");
-    }));
-    window["FLS"] = true;
     isWebp();
 })();
